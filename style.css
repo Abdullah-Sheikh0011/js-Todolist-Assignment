@@ -1,52 +1,68 @@
 * {
   padding: 0px;
   margin: 0px;
-  list-style: none;color: white;
-  
+  list-style: none;
+  color: white;
+
 }
+
 body {
   height: 100vh;
   place-items: center;
- background-color: #161512;
+  background-color: #161512;
 }
 
 .MAIN-CONTAIN {
   margin-top: 99px;
-  width: 40%;
-  height: 500px;
+  width: 35%;
+  height: 400px;
   padding: 39px 124px;
   box-shadow: 0 0 12px #a92323;
   border-radius: 25px;
   overflow-y: scroll;
-  
+
 }
+
+.position {
+  position: sticky;
+  top: 0px;
+}
+
 .MAIN-CONTAIN h1 {
   font-size: 38px;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
+
 /* INPUTBOX */
 .inp-btn {
   margin-top: 41px;
   display: flex;
   flex-direction: row;
 }
+
 /* INPUT */
 .inp-btn input {
   font-size: 23px;
-  width: 103%;
-  height: 40px;
+  width: 90%;
+  height: 30px;
   outline: none;
-  background-color: transparent;
+  background-color: #161512;
   color: white;
   padding: 9px 0px;
 }
+
+.inp-btn input::placeholder {
+  font-size: 18px;
+}
+
 /* BUTTON */
 .inp-btn button {
-  font-size: 19px;
-  padding: 9px 29px;
-  background-color: darkgrey;
+  font-size: 13px;
+  background-color: #282222;
+  padding: 10px 11px;
 }
+
 .inp-btn button:hover {
   background-color: brown;
 }
@@ -62,17 +78,12 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.list-show{
+
+.list-show {
   color: white;
   font-family: sans-serif;
 }
-/* .ul{
 
-  background-color: transparent;
-  width: 767px;
-  padding: 20px 27px;
-  border-radius: 10px;
-} */
 .Next button {
   border-radius: 6px;
   height: 50px;
@@ -82,7 +93,7 @@ body {
   font-weight: 600;
 }
 
-/* javascript element */
+/* javascript element styling   */
 ul {
   display: flex;
   align-items: center;
@@ -95,6 +106,7 @@ ul {
   margin-left: 214px;
   margin-top: 6px;
 }
-#edit-svg{
-    margin-left: 12px;
+
+#edit-svg {
+  margin-left: 12px;
 }

@@ -1,14 +1,8 @@
-var cities = ["Karachi", "Islamabad", "Peshawar", "Balochistan", "Quetta"]
+var cities = ["Karachi", "Islamabad"]
 var list = document.getElementById("list")
 
 
-function Addlist() {
-    var city = document.getElementById("input-box")
-    cities.push(city.value)
-    list.innerHTML = ''
-    Showlist()
-    city.value = ''
-}
+
 
 function Showlist() {
     list.innerHTML = ''
@@ -37,9 +31,26 @@ function deleteItem(index) {
 }
 
 function editItem(index) {
-    var userValue = prompt("Enter your new Value" , cities[index])
+    var userValue = prompt("Enter your new Value", cities[index])
     cities.splice(index, 1, userValue)
-   
-Showlist()
 
+    Showlist()
+
+}
+  var newCity = document.getElementById("input-box");
+
+
+function Addlist() {
+  if (newCity.value === "") {
+    alert("Please Enter City name");
+  } else {
+    if (cities.indexOf(newCity.value) == -1) {
+      cities.push(newCity.value);
+      newCity.value = "";
+      Showlist();
+    } else {
+      alert("City name already exists");
+      newCity.value = "";
+    }
+  }
 }
