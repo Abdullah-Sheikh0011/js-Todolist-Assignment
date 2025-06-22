@@ -12,6 +12,17 @@ body {
   background-color: #161512;
 }
 
+.Max-container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .MAIN-CONTAIN {
   margin-top: 99px;
   width: 35%;
@@ -19,7 +30,7 @@ body {
   padding: 39px 124px;
   box-shadow: 0 0 12px #a92323;
   border-radius: 25px;
-  
+
 
 }
 
@@ -76,7 +87,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
 }
 
 .list-show {
@@ -103,11 +114,17 @@ ul {
 
 }
 
-#Trash-svg {
-  margin-left: 214px;
-  
+ul li {
+  margin-right: 381px;
 }
 
-#edit-svg {
-  margin-left: 12px;
+.Trash-svg {
+  position: absolute;
+  right: 524px;
+}
+
+.edit-svg {
+  position: absolute;
+  right: 473px;
+
 }

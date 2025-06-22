@@ -9,27 +9,34 @@
 </head>
 
 <body>
-  <div class="MAIN-CONTAIN">
-    <div class="position">
+  <div class="Max-container">
+    <div class="content-center">
 
 
-      <h1>TODO-LIST</h1>
-      <div class="inp-btn">
-        <input id="input-box" type="text" placeholder="PLease Enter City Name" />
-        <button onclick="Addlist()">Add City</button>
-        <button onclick="Showlist()" id="btn">Click Me</button>
+
+      <div class="MAIN-CONTAIN">
+        <div class="position">
+
+
+          <h1>TODO-LIST</h1>
+          <div class="inp-btn">
+            <input id="input-box" type="text" placeholder="PLease Enter City Name" />
+            <button onclick="Addcity()">Add City</button>
+            <!-- <button onclick="Showcity()" id="btn">Click Me</button> -->
+
+          </div>
+        </div>
+
+
+        <div class="Next">
+          <ul class="list-show" id="listitem">
+
+          </ul>
+
+        </div>
 
       </div>
     </div>
-
-
-    <div class="Next">
-      <ul class="list-show" id="list">
-
-      </ul>
-
-    </div>
-
   </div>
 </body>
 <script src="index.js"></script>
